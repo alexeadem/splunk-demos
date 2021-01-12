@@ -1,10 +1,24 @@
+
+
+
 # Instrumenting Ruby with SignalFX
 > Tested in MacOS Catalina 10.15.7
+
+- [Instrumenting Ruby with SignalFX](#instrumenting-ruby-with-signalfx)
+  - [Checkout signalfx-demos repo](#checkout-signalfx-demos-repo)
+  - [Configure the SignalFX agent](#configure-the-signalfx-agent)
+  - [Run the agent](#run-the-agent)
+  - [Test your agent](#test-your-agent)
+  - [Verify docker logs](#verify-docker-logs)
+  - [Test a trace](#test-a-trace)
+  - [Run the ruby apps](#run-the-ruby-apps)
+  - [Generate traces](#generate-traces)
+  - [Analyze the traces in SignalFX](#analyze-the-traces-in-signalfx)
 
 
 ## Checkout signalfx-demos repo
 
-`git clone` 
+`git clone https://github.com/alexeadem/splunk-demos.git` 
 - Install SignalFX Smart Agent
 
 ## Configure the SignalFX agent
@@ -79,7 +93,7 @@ bbbde737eae1   quay.io/signalfx/signalfx-agent:5.7.1   "/bin/signalfx-agent"   1
 
 ```
 
-### Find your agent in the SignaFX UI using the agent docker id
+- Find your agent in the SignaFX UI using docker id
 
 ![agent](signalfx-agent-running.png)
 
@@ -89,7 +103,7 @@ bbbde737eae1   quay.io/signalfx/signalfx-agent:5.7.1   "/bin/signalfx-agent"   1
 docker logs -f signalfx-agent
 
 
-## Test a trace on the agent
+## Test a trace
 
 ```
 curl -X POST "http://localhost:9080/v1/trace" -H "accept: application/json" -H "content-type: application/json" -d '[ { "id": "352bff9a74ca9ad2", "traceId": "5af7183fb1d4cf5f", "name": "get /api", "timestamp": 1556604172355737, "duration": 1431, "kind": "SERVER", "localEndpoint": { "serviceName": "alex", "ipv4": "192.168.99.1", "port": 3306 }, "remoteEndpoint": { "ipv4": "172.19.0.2", "port": 58648 }, "tags": { "http.method": "GET", "http.path": "/api" } }]'
@@ -114,12 +128,12 @@ time="2021-01-12T19:29:52Z" level=debug msg="Tracking service name from trace sp
 
 
 
-## Setup Environment variables
+## Run the ruby apps
+
+- Setup Environment variables
 > Please not the `.` in front to the script
 
 `. ./env`
-
-## Run the ruby apps
 
 ```
 cd ruby
@@ -128,14 +142,16 @@ cd ruby
 
 ```
 
-## Acces the app to generate traces
+## Generate traces
+
+- Acces the apps
 
 `http://127.0.0.1:4567/`
 
 `http://localhost:4570/`
 
 
-## Analyze the traces in the SignalFX UI
+## Analyze the traces in SignalFX
 
 ![agent](app_traces.png)
 
