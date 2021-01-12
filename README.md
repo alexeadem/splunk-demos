@@ -130,7 +130,7 @@ curl -X POST "http://localhost:9080/v1/trace" -H "accept: application/json" -H "
 "OK"
 ```
 
-> And you'll see a entry similar to this in the logs
+> And you'll see an entry similar to this in the logs
 
 ```
 time="2021-01-12T19:29:52Z" level=debug msg="Could not find source of span &{5af7183fb1d4cf5f 0xc002021440 <nil> 352bff9a74ca9ad2 0xc002021450 0xc001d0ac70 0xc001d0ac78 <nil> <nil> 0xc001456120 0xc001456140 [] map[environment:C02D255HMD6R host:bbbde737eae1 http.method:GET http.path:/api signalfx.smartagent.version:5.7.1] map[data_source_ip:172.17.0.1 signalfx-endpoint:<nil>]} with sourceIP 172.17.0.1"
