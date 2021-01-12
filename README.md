@@ -2,7 +2,12 @@
 
 
 # Instrumenting Ruby with SignalFX
-> Tested in MacOS Catalina 10.15.7
+> Environment:
+> 
+> MacOS Catalina 10.15.7
+> 
+> Docker Version:          20.10.0
+
 
 - [Instrumenting Ruby with SignalFX](#instrumenting-ruby-with-signalfx)
   - [Checkout signalfx-demos repo](#checkout-signalfx-demos-repo)
@@ -59,7 +64,7 @@ C255HMD6RXX
 
 `environment: "C255HMD6RXX"`
 
-- Create the signalfx folder and copy the config
+- Create the signalfx folder and copy the config`
 
 ```
 mkdir -p /etc/signalfx/
