@@ -135,7 +135,7 @@ time="2021-01-12T19:29:52Z" level=debug msg="Tracking service name from trace sp
 ## Run the ruby apps
 
 - Setup Environment variables
-> Please not the `.` in front to the script
+> Note the `.` in front to the script
 
 `. ./env`
 
