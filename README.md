@@ -79,6 +79,10 @@ docker ps
 CONTAINER ID   IMAGE                                   COMMAND                 CREATED        STATUS        PORTS                    NAMES
 bbbde737eae1   quay.io/signalfx/signalfx-agent:5.7.1   "/bin/signalfx-agent"   16 hours ago   Up 16 hours   0.0.0.0:9080->9080/tcp   signalfx-agent
 
+```
+
+```
+
 sudo lsof -i tcp:9080
 
 COMMAND    PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
