@@ -11,7 +11,7 @@
 
 - [Instrumenting Ruby with SignalFX](#instrumenting-ruby-with-signalfx)
   - [Checkout signalfx-demos repo](#checkout-signalfx-demos-repo)
-  - [Configure the SignalFX agent](#configure-the-signalfx-agent)
+  - [Install & configure the SignalFX agent](#install--configure-the-signalfx-agent)
   - [Run the agent](#run-the-agent)
   - [Test your agent](#test-your-agent)
   - [Verify docker logs](#verify-docker-logs)
@@ -24,9 +24,8 @@
 ## Checkout signalfx-demos repo
 
 `git clone https://github.com/alexeadem/splunk-demos.git` 
-- Install SignalFX Smart Agent
 
-## Configure the SignalFX agent
+## Install & configure the SignalFX agent
 
 ```
 cd docker
