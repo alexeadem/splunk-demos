@@ -25,7 +25,6 @@
 
 ```
 cd docker
-mkdir -p /etc/signalfx/
 ```
 
 - Set SignalFX token and hostname
@@ -59,6 +58,13 @@ C255HMD6RXX
 `vi agent.yaml`
 
 `environment: "C255HMD6RXX"`
+
+- Create the signalfx folder and copy the config
+
+```
+mkdir -p /etc/signalfx/
+ cp agent.yaml /etc/signalfx/
+```
 
 ## Run the agent
 
