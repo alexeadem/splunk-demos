@@ -7,6 +7,8 @@
 > MacOS Catalina 10.15.7
 > 
 > Docker Version:          20.10.0
+>
+> ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin19]
 
 
 - [Instrumenting Ruby with SignalFX](#instrumenting-ruby-with-signalfx)
