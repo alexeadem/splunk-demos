@@ -1,7 +1,7 @@
 
 
 
-# Instrumenting Ruby with SignalFX
+# Instrumenting Ruby with Splunk
 > Environment:
 > 
 > MacOS Catalina 10.15.7
