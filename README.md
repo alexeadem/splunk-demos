@@ -11,9 +11,9 @@
 > ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin19]
 
 
-- [Instrumenting Ruby with SignalFX](#instrumenting-ruby-with-signalfx)
+- [Instrumenting Ruby with Slunk](#instrumenting-ruby-with-signalfx)
   - [Checkout signalfx-demos repo](#checkout-signalfx-demos-repo)
-  - [Install & configure the SignalFX agent](#install--configure-the-signalfx-agent)
+  - [Install & configure the Splunk agent](#install--configure-the-signalfx-agent)
   - [Run the agent](#run-the-agent)
   - [Test your agent](#test-your-agent)
   - [Verify docker logs](#verify-docker-logs)
@@ -23,17 +23,17 @@
   - [Analyze the traces in SignalFX](#analyze-the-traces-in-signalfx)
 
 
-## Checkout signalfx-demos repo
+## Checkout splunk-demos repo
 
 `git clone https://github.com/alexeadem/splunk-demos.git` 
 
-## Install & configure the SignalFX agent
+## Install & configure the Splunk agent
 
 ```
 cd docker
 ```
 
-- Set SignalFX token and hostname
+- Set Splunk token and hostname
 
 - Get your token from the SignalFx UI
 
@@ -167,7 +167,7 @@ cd ruby
 `http://localhost:4570/`
 
 
-## Analyze the traces in SignalFX
+## Analyze the traces in Splunk
 
 ![agent](app_traces.png)
 
